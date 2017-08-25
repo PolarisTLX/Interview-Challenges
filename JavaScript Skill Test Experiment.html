@@ -1,0 +1,57 @@
+    <!DOCTYPE html> <html>
+
+
+    <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+    <div class='sample_div'>This is sample text</div>
+    <div> PROPER SAMPLE ONE</div>
+
+
+    <div class='sample_div'>This is the SECOND sample text</div>
+    <div>PROPER SAMPLE TWO</div>
+
+
+    </html>
+
+    <script type="text/javascript">
+
+    $('.sample_div').click(function() {
+    alert($(this).next().html());
+});
+
+
+    // const divs = document.querySelectorAll('.sample_div');
+    // divs.forEach(divSelect => divSelect.addEventListener('click', notice));
+    //
+    // function notice() {
+    //   var text = document.getElementsByClassName('.sample_div').innerHTML;
+    //   console.log(text);
+
+
+
+  // //let message = document.getElementsByClassName('mole').innerHTML;
+  // let target = event.target;
+  // let text = document.getElementsByClassName('mole');
+  // console.log(text);
+  // //console.log(text.innerHTML);
+  //
+  // console.log(message);
+
+// }
+
+/*
+//document.body.createTextRange exist like:
+$(document).ready(function () {
+    selectText('sample_div');
+});
+
+function selectText(element) {
+    var text = document.getElementById(element).innerHTML;
+    console.log(text);
+}
+
+*/
+
+</script>
